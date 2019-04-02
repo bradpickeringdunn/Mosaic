@@ -1,4 +1,4 @@
-﻿@model IList<Mosaic.DTO.ToDoItemDTO>
+﻿@model IDictionary<int, Mosaic.DTO.ToDoItemDTO>
 
 @{
 
@@ -6,20 +6,36 @@
 }
 
 <div class="jumbotron">
-    <input type="text" value="dfsdf" />
-    <p><button onclick="">Add task</button> </p>
+    <input type="text" id="taskname" value="Task name" />
+    <p><button id="addTask">Add task</button> </p>
 </div>
 @{ foreach (var item in Model)
     {
         <div class="row">
             <div class="col-md-4">
-                <input type="checkbox" />
+                @if (item.Value.Done)
+                {
+                    <input id="@item.Key" type="checkbox" checked="checked" />
+                }
+                else
+                {
+                    <input id="@item.Key" type="checkbox" />
+                }
+
             </div>
             <div class="col-md-4">
-                @Html.Label(item.Name)
+                @{ if (item.Value.Done)
+                    {
+                        <p style="text-decoration: line-through;">@item.Value.Name</p>
+                    }
+                    else
+                    {
+                        <p>@item.Value.Name</p>
+                    }
+                }
             </div>
             <div class="col-md-4">
-                <button onclick="alert('dfsdfsd');">Remove</button>
+                <button id="@item.Key" class="removeButton">Remove</button>
             </div>
         </div>
     }

@@ -1,17 +1,18 @@
 ﻿$(":checkbox").click(function () {
-    $.post("/home/SetStatus", { id: this.attr('id'), status: this.checked }, function (result) {
-        alert(result);
+    $.post("/home/SetStatus", { id: this.id, status: this.checked }, function (result) {
+        window.location.href = "/home/Index/";
     });
 });
 
 $(".removeButton").click(function () {
-    $.post("/home/SetStatus", { id: this.attr('id')}, function (result) {
-        alert(result);
+    $.post("/home/RemoveTask", { id: this.id}, function (result) {
+        window.location.href = "/home/Index/";
     });
 });
 
 $("#addTask").click(function () {
-    $.post("/home/SetStatus", { id: this.attr('id') }, function (result) {
-        alert(result);
+    var name = $("#taskname").val();
+    $.post("/home/AddTask", { name: name }, function (result) {
+        window.location.href = "/home/Index/";
     });
 });
