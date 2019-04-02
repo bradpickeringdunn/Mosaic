@@ -21,7 +21,7 @@ namespace Mosaic.Web.Controllers
 
         public async Task<ActionResult> SetStatus(int id, bool status, CancellationToken cancellationToken)
         {
-            await _toDoService.ChangeStatus(id, status).ConfigureAwait(false);
+            await _toDoService.MarkAsDone(id, status, cancellationToken).ConfigureAwait(false);
             return new HttpStatusCodeResult(HttpStatusCode.OK);
         }
 
