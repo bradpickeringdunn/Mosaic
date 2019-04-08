@@ -226,8 +226,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Mosaic.Domain\Mosaic.Domain.csproj">
-      <Project>{7d4973f5-9b87-4132-bd10-07d8131edcc6}</Project>
+    <ProjectReference Include="..\Mosaic.Domain\Mosaic.Domain.csproj">
+      <Project>{CA48C638-049A-4D20-A60A-0055485B7513}</Project>
       <Name>Mosaic.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\Mosaic.DTO\Mosaic.DTO.csproj">

@@ -9,7 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Mosaic.Domain\Mosaic.Domain.csproj" />
+    <ProjectReference Include="..\Mosaic.Domain\Mosaic.Domain.csproj" />
+    <ProjectReference Include="..\Mosaic.Repository\Mosaic.Repository.csproj" />
   </ItemGroup>
 
 </Project>

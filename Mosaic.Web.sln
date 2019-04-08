@@ -5,13 +5,13 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mosaic.Web", "Mosaic.Web\Mosaic.Web.csproj", "{C9F98B9A-ADD1-4CBB-BF3C-6C53A70FCDC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mosaic.Domain", "..\Mosaic.Domain\Mosaic.Domain.csproj", "{7D4973F5-9B87-4132-BD10-07D8131EDCC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mosaic.Repository", "Mosaic.Repository\Mosaic.Repository.csproj", "{2BBEC3CB-1332-4651-93C8-CE870AD662FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mosaic.Repository", "Mosaic.Repository\Mosaic.Repository.csproj", "{2BBEC3CB-1332-4651-93C8-CE870AD662FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mosaic.DTO", "Mosaic.DTO\Mosaic.DTO.csproj", "{9E456022-9369-4B42-B4EF-640DA75C56D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mosaic.DTO", "Mosaic.DTO\Mosaic.DTO.csproj", "{9E456022-9369-4B42-B4EF-640DA75C56D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mosaic.IOC", "Mosaic.IOC\Mosaic.IOC.csproj", "{560A7A80-3316-4AE8-B887-89D048EDF9B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mosaic.IOC", "Mosaic.IOC\Mosaic.IOC.csproj", "{560A7A80-3316-4AE8-B887-89D048EDF9B8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mosaic.Domain", "Mosaic.Domain\Mosaic.Domain.csproj", "{CA48C638-049A-4D20-A60A-0055485B7513}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,6 @@ Global
 		{C9F98B9A-ADD1-4CBB-BF3C-6C53A70FCDC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9F98B9A-ADD1-4CBB-BF3C-6C53A70FCDC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9F98B9A-ADD1-4CBB-BF3C-6C53A70FCDC0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7D4973F5-9B87-4132-BD10-07D8131EDCC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D4973F5-9B87-4132-BD10-07D8131EDCC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D4973F5-9B87-4132-BD10-07D8131EDCC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D4973F5-9B87-4132-BD10-07D8131EDCC6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2BBEC3CB-1332-4651-93C8-CE870AD662FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2BBEC3CB-1332-4651-93C8-CE870AD662FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BBEC3CB-1332-4651-93C8-CE870AD662FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{560A7A80-3316-4AE8-B887-89D048EDF9B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{560A7A80-3316-4AE8-B887-89D048EDF9B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{560A7A80-3316-4AE8-B887-89D048EDF9B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA48C638-049A-4D20-A60A-0055485B7513}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA48C638-049A-4D20-A60A-0055485B7513}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA48C638-049A-4D20-A60A-0055485B7513}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA48C638-049A-4D20-A60A-0055485B7513}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
