@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mosaic.IOC", "Mosaic.IOC\Mo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mosaic.Domain", "Mosaic.Domain\Mosaic.Domain.csproj", "{CA48C638-049A-4D20-A60A-0055485B7513}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5DF8D158-CFC6-4D11-9C8F-058144742E24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mosaic.Domain.Tests", "Mosaic.Domain.Tests\Mosaic.Domain.Tests.csproj", "{31E7CC44-78ED-46F5-AF04-618C9AD95651}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,9 +43,16 @@ Global
 		{CA48C638-049A-4D20-A60A-0055485B7513}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA48C638-049A-4D20-A60A-0055485B7513}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA48C638-049A-4D20-A60A-0055485B7513}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31E7CC44-78ED-46F5-AF04-618C9AD95651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31E7CC44-78ED-46F5-AF04-618C9AD95651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31E7CC44-78ED-46F5-AF04-618C9AD95651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31E7CC44-78ED-46F5-AF04-618C9AD95651}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{31E7CC44-78ED-46F5-AF04-618C9AD95651} = {5DF8D158-CFC6-4D11-9C8F-058144742E24}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DCBEE8E6-4F2C-4317-B7FF-B4057A928A24}
